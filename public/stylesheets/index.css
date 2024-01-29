@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.index-banner {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+}
+
+.banner-index {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.text-box {
+  position: absolute;
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  left: 20px;
+}
+
+.text-box h1 {
+  margin-bottom: 10px;
+  font-size: 70px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.banner-index img {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.info-section {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-box {
+  background-color: #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 1500px;
+}
+
+.info-box p {
+  text-align: left;
+  margin: 0;
+  word-wrap: break-word;
+  font-size: 28px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.info-section h2 {
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.index-banner,
+.info-section,
+.spacer-section {
+  height: 100vh;
+}
+
+.index-banner {
+  background-color: lightblue;
+}
+
+.info-section {
+  background-color: #f0f0f0;
+}
+
+.orange-section {
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black; /* Dark blue background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orange-section {
+  top: 100; /* Adjusted to show the orange section after scrolling */
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.view-packages-btn {
+  padding: 15px 30px;
+  font-size: 36px;
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-packages-btn:hover {
+  background-color: #fff;
+  color: black;
+}
