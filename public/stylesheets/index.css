@@ -118,12 +118,12 @@ body {
 
 @media only screen and (max-width: 600px) {
   .index-banner {
-    height: auto;
-  }
+    height: 100vh;
+    }
 
-  .text-box {
-    text-align: center;
-  }
+    .banner-index img {
+      height: 100vh;
+    }
 
   .text-box h1 {
     font-size: 6vw;
@@ -146,7 +146,6 @@ body {
   }
 
   .view-packages-btn {
-    padding: 8px 16px;
-    font-size: 0.8em;
+   font-size: 8px;
   }
 }
