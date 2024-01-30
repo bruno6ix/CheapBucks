@@ -49,6 +49,7 @@ body {
 .banner-index img {
   width: 100%;
   height: auto;
+  object-fit: cover; /* Para asegurar que la imagen cubra completamente el contenedor */
   z-index: 0;
 }
 
@@ -117,32 +118,35 @@ body {
 
 @media only screen and (max-width: 600px) {
   .index-banner {
-    width: auto;
+    height: auto;
   }
 
   .text-box {
-    position: static;
-    text-align: center; /* Centra el texto en dispositivos móviles */
+    text-align: center;
   }
 
   .text-box h1 {
-    font-size: 6vw; /* Se ajustó el tamaño de la fuente para dispositivos móviles */
+    font-size: 6vw;
   }
 
   .text-box h3 {
-    font-size: 3vw; /* Se ajustó el tamaño de la fuente para dispositivos móviles */
+    font-size: 3vw;
+  }
+
+  .banner-index img {
+    width: 100%;
   }
 
   .info-box {
-    max-width: 100%; /* Se ajustó el ancho máximo para dispositivos móviles */
+    max-width: 100%;
   }
 
   .info-section h2 {
-    font-size: 2.5em; /* Se ajustó el tamaño de la fuente para dispositivos móviles */
+    font-size: 2.5em;
   }
 
   .view-packages-btn {
-    padding: 8px 16px; /* Se ajustó el padding para dispositivos móviles */
-    font-size: 0.8em; /* Se ajustó el tamaño de la fuente para dispositivos móviles */
+    padding: 8px 16px;
+    font-size: 0.8em;
   }
 }
