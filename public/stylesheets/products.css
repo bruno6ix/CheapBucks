@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: rgb(224, 130, 22);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .back-button:hover {
+    background-color: orange;
+    color: black;
+    transition: 0.2s;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 90px 20px 20px; /* Añadido espacio para la barra de navegación fija */
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 300px; /* Cambia o elimina esta línea */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .price {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .buy-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .buy-button {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+  .buy-button:hover {
+    background-color: white;
+    color: orange;
+    border: 1px solid orange;
+    transition: .2s;
+  }
+  
+  .card.hidden {
+    display: none;
+  }
+
+  /* Estilo básico del select */
+#categoryFilter {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: white url('https://imageurl.com/arrow.png') no-repeat right center;
+    background-size: 16px;
+    margin: 0 auto; /* Añadido para centrar horizontalmente */
+    display: block; /* Añadido para ocupar el ancho completo del contenedor */
+    width: 60%; /* Puedes ajustar el ancho según tus necesidades */
+  }
+  
+  /* Estilo al pasar el mouse sobre el select */
+  #categoryFilter:hover {
+    border-color: #555;
+  }
+  

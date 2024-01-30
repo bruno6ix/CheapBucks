@@ -3,9 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/products.css">
+  <title>CheapBucks | Paquetes</title>
 </head>
 <body>
-  <h1>TEST</h1>
+
+  <div class="navbar">
+    <button class="back-button" onclick="window.location.href='/'">⟵ Volver</button>
+  
+    <select id="categoryFilter" onchange="filterProducts()">
+      <option value="all">Todos</option>
+      <option value="Pavos">Pavos</option>
+      <option value="Especial">Especial</option>
+    </select>
+  </div>
+
+  <div class="card-container" id="cardContainer">
+    <!-- Las tarjetas se llenarán con JavaScript -->
+    <% products.forEach(function(product) { %>
+      <div class="card" data-category="<%= product.category %>">
+        <img src="<%= product.image %>" alt="Product Image">
+        <div class="card-content">
+          <div><%= product.title %></div>
+          <div class="price"><%= product.price %></div>
+          <div class="buy-button-container">
+            <button class="buy-button" onclick="window.location.href='<%= product.link %>'">Comprar</button>
+            <div class="progress-bar-container">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+
+  <script src="/javascripts/filter.js"></script>
+
 </body>
 </html>
