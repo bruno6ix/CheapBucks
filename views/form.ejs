@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/images/icon.jpeg" type="image/x-icon">
+
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="/stylesheets/form.css"> <!-- Agrega el archivo CSS para estilos personalizados -->
+</head>
+<body>
+  <h1>CheapBucks | Contacto</h1>
+
+  <form id="discordForm" method="POST" action="/contact-form">
+    <label for="nombre">Nombre de Discord:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="problema">Describa su problema:</label><br>
+    <textarea id="problema" name="problema" rows="4" cols="50" required></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+  
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>¡Gracias por contactarte con nosotros!</h2>
+      <p>Seras redireccionado al inicio.</p>
+    </div>
+  </div>
+  
+</body>
+</html>
