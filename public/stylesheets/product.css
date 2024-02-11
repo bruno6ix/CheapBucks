@@ -37,9 +37,9 @@ body {
   }
   
   .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Crea columnas de tamaño mínimo de 300px que se ajustan automáticamente */
+    gap: 20px; /* Espacio entre las tarjetas */
     padding: 90px 20px 20px; /* Añadido espacio para la barra de navegación fija */
     justify-content: space-evenly;
   }
@@ -78,7 +78,7 @@ body {
     background-color: orange;
     color: white;
     padding: 10px;
-    border: none;
+    border: 1px solid orange;
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
@@ -89,7 +89,6 @@ body {
   .buy-button:hover {
     background-color: white;
     color: orange;
-    border: 1px solid orange;
     transition: .2s;
   }
   
@@ -98,24 +97,37 @@ body {
   }
 
   /* Estilo básico del select */
-#categoryFilter {
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  .navbar select#categoryFilter {
+    padding: 8px 12px; /* Ajusta el espacio interno del botón desplegable */
+    font-size: 14px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Añade un borde */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    background-color: #fff; /* Color de fondo */
+    color: #333; /* Color del texto */
+  }
+  
+  .navbar select#categoryFilter:hover {
+    border-color: #555; /* Cambia el color del borde al pasar el mouse */
+  }
+
+  .contact-button-container {
+    text-align: center;
+    margin-top: 20px; /* Espacio entre el contenedor de tarjetas y el botón de contacto */
+  }
+  
+  .contact-button {
+    background-color: orange;
+    color: white;
+    padding: 15px 30px;
+    border: 1px solid orange;
+    border-radius: 5px;
     cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: white url('https://imageurl.com/arrow.png') no-repeat right center;
-    background-size: 16px;
-    margin: 0 auto; /* Añadido para centrar horizontalmente */
-    display: block; /* Añadido para ocupar el ancho completo del contenedor */
-    width: 60%; /* Puedes ajustar el ancho según tus necesidades */
+    font-size: 1.2em;
+    margin: 10px;
+    transition: background-color 0.3s ease;
   }
   
-  /* Estilo al pasar el mouse sobre el select */
-  #categoryFilter:hover {
-    border-color: #555;
+  .contact-button:hover {
+    background-color: white;
+    color: orange; /* Cambia el color de fondo al pasar el mouse */
   }
-  

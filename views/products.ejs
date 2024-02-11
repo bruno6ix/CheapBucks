@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/images/icon.jpeg" type="image/x-icon">
+  <script src="https://js.stripe.com/v3/"></script>
 
-  <link rel="stylesheet" href="/stylesheets/products.css">
+  <link rel="shortcut icon" href="/images/icon.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="/stylesheets/product.css">
   <title>CheapBucks | Paquetes</title>
 </head>
 <body>
 
   <div class="navbar">
     <button class="back-button" onclick="window.location.href='/'">⟵ Volver</button>
-  
     <select id="categoryFilter" onchange="filterProducts()">
       <option value="all">Todos</option>
       <option value="Pavos">Pavos</option>
@@ -29,7 +29,7 @@
           <div><%= product.title %></div>
           <div class="price"><%= product.price %></div>
           <div class="buy-button-container">
-            <button class="buy-button" onclick="window.location.href='<%= product.link %>'">Comprar</button>
+            <button class="buy-button" onclick="openCheckoutPopup('<%= product.link %>')">Comprar</button>
             <div class="progress-bar-container">
               <div class="progress-bar"></div>
             </div>
@@ -39,8 +39,12 @@
     <% }); %>
   </div>
 
+  <div class="contact-button-container">
+    <button class="contact-button" onclick="window.location.href='/contact-form'">¿Problemas con la compra? Contáctanos</button>
+  </div>
 
-
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="/javascripts/check.js"></script>
   <script src="/javascripts/filter.js"></script>
 
 </body>

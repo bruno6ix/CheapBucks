@@ -2,29 +2,57 @@
     {
       "title": "1000 V-Bucks",
       "category": "Pavos",
-      "image": "/images/card_2usd.png",
+      "image": "/images/FORTNITE-1000-Pavos.webp",
       "price": "$1.99",
       "link": "https://buy.stripe.com/4gw018fvEcmr6AMdQV"
     },
     {
       "title": "2800 V-Bucks",
       "category": "Pavos",
-      "image": "/images/card_5usd.png",
+      "image": "/images/FORTNITE-2800-Pavos-2.webp",
       "price": "$5.02",
       "link": "https://buy.stripe.com/28obJQgzIgCH7EQfZ4"
     },
     {
       "title": "5000 V-Bucks",
       "category": "Pavos",
-      "image": "/images/card_8usd.png",
+      "image": "/images/FORTNITE-5000-Pavos.webp",
       "price": "$8.01",
       "link": "https://buy.stripe.com/6oEeW2dnw1HNf7i6ov"
     },
     {
       "title": "13500 V-Bucks",
       "category": "Pavos",
-      "image": "/images/card_21usd.png",
+      "image": "/images/FORTNITE-13500-Pavos.webp",
       "price": "$21.73",
       "link": "https://buy.stripe.com/cN229gabkgCH6AMbIQ"
+    },
+    {
+      "title": "Vibras Tranquilas",
+      "category": "Especial",
+      "image": "/images/packvibez.webp",
+      "price": "$1",
+      "link": "https://buy.stripe.com/dR6018dnw5Y31gs5kt"
+    },
+    {
+      "title": "Excursionista Rebelde",
+      "category": "Especial",
+      "image": "/images/excursionista.webp",
+      "price": "$5.96",
+      "link": "https://buy.stripe.com/14keW2abk0DJgbm4gr"
+    },
+    {
+      "title": "Exilio del Nuliplano",
+      "category": "Especial",
+      "image": "/images/PACKNULIPLANO.webp",
+      "price": "$3.25",
+      "link": "https://buy.stripe.com/aEU29gerA5Y3f7i5ku"
+    },
+    {
+      "title": "Elite Dorada",
+      "category": "Especial",
+      "image": "/images/packelite.webp",
+      "price": "$5.42",
+      "link": "https://buy.stripe.com/14kg064R09af7EQ14g"
     }
   ]
