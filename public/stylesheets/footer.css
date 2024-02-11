@@ -5,6 +5,7 @@
     text-align: center;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
   
   .footer-category {
@@ -49,7 +50,7 @@
   }
 
   .footer-category:hover a {
-    color: #333;
+    color: #333; /* Cambia el color del texto de los enlaces */
   }
 
   .footer-category a {
